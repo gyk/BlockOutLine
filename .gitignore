@@ -1,0 +1,8 @@
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*.so
+
+# Distribution / packaging
+bin/
+build/
+dist/
