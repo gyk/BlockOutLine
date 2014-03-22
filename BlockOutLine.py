@@ -148,7 +148,8 @@ class GameWindow(QMainWindow):
         elif event.key() == Qt.Key_Down:
             self.pit.move_cube(NEGATIVE_Y)
         elif event.key() == Qt.Key_PageDown:
-            self.pit.move_down()
+            if self.pit.move_down():
+                self.active_score = max(self.active_score - 1, 0)
 
         ## Drop
         elif event.key() == Qt.Key_Space:
