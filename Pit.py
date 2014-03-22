@@ -118,7 +118,6 @@ class Pit(QtCore.QObject):
     def drop_cube(self):
         while(self.can_move_down()):
             self.move_down()
-        self.remove_completed_layers()
     
     @staticmethod
     def _is_layer_incomplete(layer):
